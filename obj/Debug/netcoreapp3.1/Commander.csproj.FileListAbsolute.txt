@@ -51,3 +51,7 @@ C:\Users\mase-\Documents\Coding Workspace\Dotnet API\Commander\obj\Debug\netcore
 C:\Users\mase-\Documents\Coding Workspace\Dotnet API\Commander\obj\Debug\netcoreapp3.1\Commander.genruntimeconfig.cache
 C:\Users\mase-\Documents\Coding Workspace\Dotnet API\Commander\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Users\mase-\Documents\Coding Workspace\Dotnet API\Commander\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\mase-\Documents\Coding Workspace\Dotnet API\Commander\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\mase-\Documents\Coding Workspace\Dotnet API\Commander\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\mase-\Documents\Coding Workspace\Dotnet API\Commander\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\mase-\Documents\Coding Workspace\Dotnet API\Commander\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
