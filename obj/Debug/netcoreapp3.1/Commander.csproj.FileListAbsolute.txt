@@ -13,7 +13,6 @@ C:\Users\mase-\Documents\Coding Workspace\Dotnet API\Commander\bin\Debug\netcore
 C:\Users\mase-\Documents\Coding Workspace\Dotnet API\Commander\obj\Debug\netcoreapp3.1\Commander.RazorTargetAssemblyInfo.cache
 C:\Users\mase-\Documents\Coding Workspace\Dotnet API\Commander\obj\Debug\netcoreapp3.1\Commander.dll
 C:\Users\mase-\Documents\Coding Workspace\Dotnet API\Commander\obj\Debug\netcoreapp3.1\Commander.pdb
-C:\Users\mase-\Documents\Coding Workspace\Dotnet API\Commander\bin\Debug\netcoreapp3.1\Commander.StaticWebAssets.xml
 C:\Users\mase-\Documents\Coding Workspace\Dotnet API\Commander\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\mase-\Documents\Coding Workspace\Dotnet API\Commander\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 C:\Users\mase-\Documents\Coding Workspace\Dotnet API\Commander\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll

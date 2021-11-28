@@ -14,6 +14,6 @@ namespace Commander.Data
 
         //representing our Command objects to our database as a DbSet
         //mapping is done here for objects in the Models namespace. more objects there means more mapping to be done here
-        public DbSet<Command> Commands { get; set; }
+        public DbSet<Command> Commands { get; set; } //table will be called "commands" on migration to database
     }
 }
