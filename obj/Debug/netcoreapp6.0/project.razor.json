@@ -1,0 +1,19 @@
+{
+  "FilePath": "c:\\Users\\mase-\\Documents\\Coding Workspace\\Dotnet API\\Commander\\Commander.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-3.0",
+    "LanguageVersion": "3.0",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-3.0"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 1000
+  },
+  "RootNamespace": "Commander",
+  "Documents": [],
+  "SerializationFormat": "0.2"
+}
