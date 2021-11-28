@@ -49,3 +49,5 @@ C:\Users\mase-\Documents\Coding Workspace\Dotnet API\Commander\obj\Debug\netcore
 C:\Users\mase-\Documents\Coding Workspace\Dotnet API\Commander\obj\Debug\netcoreapp3.1\Commander.csproj.CoreCompileInputs.cache
 C:\Users\mase-\Documents\Coding Workspace\Dotnet API\Commander\obj\Debug\netcoreapp3.1\Commander.csproj.CopyComplete
 C:\Users\mase-\Documents\Coding Workspace\Dotnet API\Commander\obj\Debug\netcoreapp3.1\Commander.genruntimeconfig.cache
+C:\Users\mase-\Documents\Coding Workspace\Dotnet API\Commander\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\mase-\Documents\Coding Workspace\Dotnet API\Commander\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
