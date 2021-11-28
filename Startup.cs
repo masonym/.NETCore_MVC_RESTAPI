@@ -31,6 +31,8 @@ namespace Commander
             // this connects the DB to the rest of our app
             services.AddDbContext<CommanderContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("CommanderConnection")));
             services.AddControllers();
+
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             // Dependency injection to allow us to change our ICommanderRepo to point to somewhere else if we wish to change implementation
             services.AddScoped<ICommanderRepo, SqlCommanderRepo>();
         }
