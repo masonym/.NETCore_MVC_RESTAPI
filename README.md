@@ -2,7 +2,7 @@
 ---
 
 
-###This is a project created to learn and practice a few concepts:
+### This is a project created to learn and practice a few concepts:
 
 > - Creating a REST API following the RESTful API guidelines
 > - .NET Core
@@ -16,7 +16,7 @@
 > - Creating & Testing API Endpoints
 > - Deploying project to the web (still WIP)
 
-###Tools used:
+### Tools used:
 > - VSCode
 > - SQL Server
 > - SQL Server Management Studio
