@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
 using Commander.Dtos;
 using Microsoft.AspNetCore.JsonPatch;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace Commander.Controllers
 {
@@ -26,6 +27,7 @@ namespace Commander.Controllers
         }
 
         [HttpGet]
+        [SwaggerOperation(Summary = "List every command in the repository")] // Summary for swagger documentation
         public ActionResult<IEnumerable<CommandReadDto>> GetAllCommands()
         {
             var commandItems = _repository.GetAllCommands();
@@ -34,6 +36,7 @@ namespace Commander.Controllers
         }
         //GET api/commands/{id}
         [HttpGet("{id}", Name = "GetCommandById")]
+        [SwaggerOperation(Summary = "Gets the command for the given Id")] // Summary for swagger documentation
         public ActionResult<CommandReadDto> GetCommandById(int id)
         {
             var commandItem = _repository.GetCommandById(id);
@@ -46,6 +49,7 @@ namespace Commander.Controllers
 
         //POST api/commands
         [HttpPost]
+        [SwaggerOperation(Summary = "Create a a new a command. Fields are <task to do>, <code of the command>, <application platform>")] // Summary for swagger documentation
         public ActionResult<CommandReadDto> CreateCommand(CommandCreateDto commandCreateDto)
         {
             var commandModel = _mapper.Map<Command>(commandCreateDto); //maps from commandCreateDto to commandModel (a command object)
@@ -61,6 +65,7 @@ namespace Commander.Controllers
 
         //PUT api/commands/{id}
         [HttpPut("{id}")]
+        [SwaggerOperation(Summary = "Update a command. All fields must be specified")] // Summary for swagger documentation
         public ActionResult UpdateCommand(int id, CommandUpdateDto commandUpdateDto)
         {
             var commandModelFromRepo = _repository.GetCommandById(id);
@@ -79,6 +84,7 @@ namespace Commander.Controllers
 
         //PATCH api/commands/{id}
         [HttpPatch("{id}")]
+        [SwaggerOperation(Summary = "Update a command with the patch method. Give an operation, path, and new value")] // Summary for swagger documentation
         public ActionResult PartialCommandUpdate(int id, JsonPatchDocument<CommandUpdateDto> patchDoc)
         {
             //check if we have a resource in our repository to update 
@@ -107,6 +113,7 @@ namespace Commander.Controllers
         }
         //DELETE api/commands/{id}
         [HttpDelete("{id}")]
+        [SwaggerOperation(Summary = "Delete a command")] // Summary for swagger documentation
         public ActionResult DeleteCommand(int id)
         {
             var commandModelFromRepo = _repository.GetCommandById(id);
