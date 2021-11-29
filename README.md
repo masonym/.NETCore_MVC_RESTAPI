@@ -31,10 +31,14 @@ Below are some screenshots of the project
 
 ![Commands in Documentation Website](https://i.imgur.com/JvccPYP.png)
 
-#### Example of trying out an API endpoint through Swagger (GET command by id 3 in this case)
+#### Example of trying out an API endpoint using Swagger (GET command by id 3 in this case - returns 200 Success)
 
 ![GET Command by ID](https://i.imgur.com/b3vHgTT.png)
 
-#### Creating a command with through Postman with HTTP POST
+#### Creating a command using Postman with HTTP POST (returns 201 Created)
 
 ![POST new command](https://i.imgur.com/H3oUVC2.png)
+
+#### Updating the command with Id '6' using Postman with HTTP PATCH (changes `platform` attribute to new string in `value` - returns 204 No Content)
+
+![PATCH update command](https://i.imgur.com/E2zmn2E.png)
