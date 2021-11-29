@@ -12,6 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 using Newtonsoft.Json.Serialization;
 
 namespace Commander
@@ -31,18 +32,35 @@ namespace Commander
             // uses the connection string specified in appsettings.json
             // this connects the DB to the rest of our app
             services.AddDbContext<CommanderContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("CommanderConnection")));
-            services.AddControllers().AddNewtonsoftJson(s => {
+            services.AddControllers().AddNewtonsoftJson(s =>
+            {
                 s.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
             });
 
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             // Dependency injection to allow us to change our ICommanderRepo to point to somewhere else if we wish to change implementation
             services.AddScoped<ICommanderRepo, SqlCommanderRepo>();
+
+            //Swagger UI
+            services.AddMvc();
+            services.AddSwaggerGen(c =>
+            {
+                c.EnableAnnotations();
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Command Line API by Mason", Version = "v1" });
+            });
+            services.AddSwaggerGenNewtonsoftSupport();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            //Swagger UI
+            app.UseSwagger(); 
+            app.UseSwaggerUI(c =>
+            {
+                c.RoutePrefix= "docs";
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Commander API v1");
+            });
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -58,6 +76,7 @@ namespace Commander
             {
                 endpoints.MapControllers();
             });
+
         }
     }
 }
