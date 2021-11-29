@@ -23,3 +23,11 @@
 > - Postman (Testing API Endpoints)
 > - Swagger & ASP.NET Core (Autogeneration of API Documentation & Endpoint Testing)
 > - AutoMapper (To autogenerate API mapping)
+
+### Showcase
+Below are some screenshots of the project
+
+#### Documentation Website Commands
+
+![Commands in Documentation Website](https://i.imgur.com/JvccPYP.png)
+
