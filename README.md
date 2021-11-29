@@ -31,3 +31,10 @@ Below are some screenshots of the project
 
 ![Commands in Documentation Website](https://i.imgur.com/JvccPYP.png)
 
+#### Example of trying out an API endpoint through Swagger (GET command by id 3 in this case)
+
+![GET Command by ID](https://i.imgur.com/b3vHgTT.png)
+
+#### Creating a command with through Postman with HTTP POST
+
+![POST new command](https://i.imgur.com/H3oUVC2.png)
